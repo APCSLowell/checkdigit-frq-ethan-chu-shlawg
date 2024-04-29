@@ -22,7 +22,7 @@ public class CheckDigit
    */     
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     int numCheck = getCheck(numWithCheckDigit);
+     int numCheck = numWithCheckDigit%10;
      int num = numWithCheckDigit/10;
      int newCheck = getCheck(num);
      if(numCheck == newCheck)
