@@ -24,7 +24,8 @@ public class CheckDigit
    {      
      int numCheck = getCheck(numWithCheckDigit);
      int num = numWithCheckDigit/10;
-     if(num*10 + numCheck == numWithCheckDigit)
+     int newCheck = getCheck(num);
+     if(numCheck == newCheck)
         return true;
      return false;
    }    
